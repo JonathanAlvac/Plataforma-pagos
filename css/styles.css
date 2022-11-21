@@ -172,6 +172,10 @@ img {
     color: var(--primario);
 }
 
+.navegacion__link--blanco {
+    color: var(--blanco);
+}
+
 @media (min-width: 768px) {
     .navegacion__link {
         color: var(--blanco)
@@ -226,7 +230,7 @@ img {
     margin: 0;
 }
 
-.listado__numero{
+.listado__numero {
     font-size: 6rem;
     color: var(--primario);
     margin: 0;
@@ -234,13 +238,14 @@ img {
     text-align: center;
 }
 
-@media (min-width: 768px){
-    .listado__numero{
+@media (min-width: 768px) {
+    .listado__numero {
         flex-basis: 20rem;
         text-align: right;
         font-size: 4rem;
     }
 }
+
 .listado__texto {
     margin: 0;
     font-size: 2rem;
@@ -304,11 +309,12 @@ Igual forma se comenta como aprendizaje
     }
 }
 
-@media (min-width: 998){
-    .comisiones__grid{
+@media (min-width: 998px) {
+    .comisiones__grid {
         align-items: center;
     }
 }
+
 .comisiones__texto {
     text-align: center;
     font-size: 2.4rem;
@@ -318,5 +324,89 @@ Igual forma se comenta como aprendizaje
 @media (min-width: 768px) {
     .comisiones__texto {
         text-align: left;
+    }
+}
+
+.testimoniales {
+    background-color: var(--primario);
+    padding: 5rem 0;
+}
+
+.testimoniales__heading {
+    color: white;
+}
+
+.testimoniales__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4rem;
+}
+
+@media (min-width: 768px) {
+    .testimoniales__grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5rem;
+    }
+}
+
+.testimonial {
+    background-color: var(--blanco);
+    box-shadow: 0px 0px 15px 3px rgb(0 0 0 /.15);
+    padding: 2rem;
+    position: relative;
+}
+
+.testimonial__texto {
+    padding-left: 4rem;
+}
+
+.testimonial__texto::before {
+    content: '';
+    background-image: url(../img/comilla.png);
+    background-size: 3rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    top: 3.5rem;
+    left: 2rem;
+}
+
+.testimonial__autor {
+    font-size: 700;
+    text-align: right;
+    color: var(--primario);
+}
+
+.footer {
+    padding: 3rem 0;
+    background-color: #5A30A0;
+    color: var(--blanco);
+}
+
+.footer__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+@media (min-width: 768px) {
+    .footer__grid {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+}
+
+.footer__logo {
+    width: 20rem;
+    margin: 0 auto 4rem auto;
+}
+
+@media (min-width: 768px) {
+    .footer__logo {
+        margin: 0;
     }
 }
